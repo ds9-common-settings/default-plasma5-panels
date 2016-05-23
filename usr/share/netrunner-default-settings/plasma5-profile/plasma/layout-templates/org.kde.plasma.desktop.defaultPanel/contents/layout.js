@@ -62,10 +62,4 @@ systray.writeConfig("shownItems", "transmission")
 panel.addWidget("org.kde.plasma.digitalclock")
 panel.addWidget("org.kde.plasma.notifications")
 
-var krunnerIcon = panel.addWidget("org.kde.plasma.icon")
-krunnerIcon.currentConfigGroup = ["General"]
-krunnerIcon.writeConfig("applicationName", "Krunner")
-krunnerIcon.writeConfig("iconName", "applications-system")
-krunnerIcon.writeConfig("url", "/usr/share/applications/kde4/krunner.desktop")
-
 
