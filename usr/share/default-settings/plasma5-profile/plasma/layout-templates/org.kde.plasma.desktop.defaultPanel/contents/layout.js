@@ -52,7 +52,7 @@ yakuakeIcon.writeConfig("url", "/usr/share/applications/org.kde.yakuake.desktop"
 
 var pvolumemixer = panel.addWidget("org.kde.plasma.volume")
 
-var systray = panel.addWidget("org.kde.plasma.private.systemtray")
+var systray = panel.addWidget("org.kde.plasma.systemtray")
 systray.currentConfigGroup = ["General"]
 systray.writeConfig("extraItems","org.kde.plasma.devicenotifier,org.kde.plasma.battery,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.plasma.printmanager,org.kde.ktp-contactlist,org.kde.plasma.ktplegacypresenceapplet,org.kde.plasma.notifications")
 systray.writeConfig("hiddenItems","KMix,org.kde.ktp-contactlist,org.kde.plasma.ktplegacypresenceapplet,org.kde.plasma.volume,org.kde.plasma.notifications,org.kde.plasma.clipboard")
