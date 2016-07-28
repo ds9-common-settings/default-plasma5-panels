@@ -27,6 +27,7 @@ if (freeEdges["bottom"] == true) {
 
 //panel.height = screenGeometry(panel.screen).height > 1024 ? 35 : 27
 panel.formfactor = 2
+panel.height = 56
 
 var kicker = panel.addWidget("org.kde.plasma.kickerdash")
 kicker.currentConfigGroup = ["Shortcuts"]
@@ -38,7 +39,7 @@ kicker.writeConfig("favoriteApps", ["systemsettings.desktop","synaptic.desktop",
 kicker.writeConfig("limitDepth", true)
 kicker.writeConfig("useCustomButtonImage", true)
 
-var eitm = panel.addWidget("org.kde.plasma.taskmanager")
+var eitm = panel.addWidget("org.kde.plasma.icontasks")
 eitm.currentConfigGroup = ["Configuration", "General"]
 eitm.writeConfig("launchers" ,["file:///usr/share/applications/org.kde.dolphin.desktop","file:///usr/share/applications/firefox.desktop"])
 eitm.writeConfig("showOnlyCurrentDesktop", true)
